@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact • zynox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">zynox</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="vault.html">vault</a>
+            <a href="subscribe.html">subscribe</a>
+            <a href="contact.html" class="active">contact</a>
+        </div>
+        <div class="nav-spacer"></div>
+    </nav>
+
+    <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-content">
+                <h1>connect with us</h1>
+                <p class="lead">share your thoughts, questions, or ideas. i'm listening.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="enter your sacred name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="your digital sanctum" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="your message" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button primary">send signal</button>
+                            
+                            <!-- Message containers -->
+                            <div id="success-message" class="form-message success">
+                                <p>signal sent successfully. i'll connect with you soon.</p>
+                            </div>
+                            <div id="error-message" class="form-message error">
+                                <p>signal disrupted. please try again.</p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>other ways to connect</h2>
+                        <p>prefer a different channel? reach out through these frequencies.</p>
+                        <a href="mailto:contact@zynox.com" class="email-link">contact@zynox.com</a>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link">twitter</a>
+                            <a href="#" class="social-link">linkedin</a>
+                            <a href="#" class="social-link">github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 zynox. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS
+            emailjs.init("nQVHTQ3f0UhfNq0wq");
+            
+            // Test EmailJS initialization
+            console.log("EmailJS initialized");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 

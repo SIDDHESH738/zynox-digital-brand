@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscribe • zynox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">zynox</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="vault.html">vault</a>
+            <a href="subscribe.html" class="active">subscribe</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="nav-spacer"></div>
+    </nav>
+
+    <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <main>
+        <section class="subscribe-section">
+            <div class="content-wrapper fade-in">
+                <h1>join the signal</h1>
+                <p class="lead">get exclusive content and early access to new releases</p>
+                
+                <div class="subscribe-content">
+                    <div class="subscribe-info">
+                        <h2>what you'll receive</h2>
+                        <ul class="benefits-list">
+                            <li>weekly insights on ai and systems</li>
+                            <li>early access to new products</li>
+                            <li>exclusive tutorials and guides</li>
+                            <li>private community access</li>
+                        </ul>
+                    </div>
+
+                    <form class="subscribe-form" id="subscribe-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="enter your sacred name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="your digital sanctum" required>
+                        </div>
+                        <button type="submit" class="cta-button">enter the signal</button>
+                    </form>
+                </div>
+
+                <div class="testimonials">
+                    <blockquote>
+                        "the insights and knowledge shared through the signal have been invaluable to my journey."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 zynox. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

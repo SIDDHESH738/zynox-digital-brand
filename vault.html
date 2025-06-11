@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vault • zynox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">zynox</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="vault.html" class="active">vault</a>
+            <a href="subscribe.html">subscribe</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="nav-spacer"></div>
+    </nav>
+
+    <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <main>
+        <section class="vault-section">
+            <div class="content-wrapper fade-in">
+                <h1>the vault</h1>
+                <p class="lead">thoughts, insights, and discoveries</p>
+
+                <div class="filter-section">
+                    <button class="filter-btn active" data-category="all">all</button>
+                    <button class="filter-btn" data-category="ai">ai</button>
+                    <button class="filter-btn" data-category="coding">coding</button>
+                    <button class="filter-btn" data-category="self-help">self-help</button>
+                    <button class="filter-btn" data-category="motivation">motivation</button>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card" data-category="ai">
+                        <div class="blog-header">
+                            <span class="blog-author">zynox</span>
+                            <span class="blog-category">ai</span>
+                        </div>
+                        <h2>the future of ai systems</h2>
+                        <p class="blog-excerpt">exploring the next generation of artificial intelligence and its impact on human creativity. how we're building systems that learn and adapt.</p>
+                        <blockquote class="blog-quote">"in the dance of algorithms, we find the rhythm of human potential."</blockquote>
+                    </article>
+
+                    <article class="blog-card" data-category="coding">
+                        <div class="blog-header">
+                            <span class="blog-author">zynox</span>
+                            <span class="blog-category">coding</span>
+                        </div>
+                        <h2>system architecture patterns</h2>
+                        <p class="blog-excerpt">a deep dive into modern system architecture patterns and how they're shaping the future of software development.</p>
+                        <blockquote class="blog-quote">"clean code is not just about writing, it's about thinking."</blockquote>
+                    </article>
+
+                    <article class="blog-card" data-category="self-help">
+                        <div class="blog-header">
+                            <span class="blog-author">zynox</span>
+                            <span class="blog-category">self-help</span>
+                        </div>
+                        <h2>the art of focus</h2>
+                        <p class="blog-excerpt">mastering the art of deep work in an age of constant distraction. practical strategies for maintaining focus and productivity.</p>
+                        <blockquote class="blog-quote">"focus is not about saying yes to the things you've got to focus on, but saying no to the hundred other good ideas."</blockquote>
+                    </article>
+
+                    <article class="blog-card" data-category="motivation">
+                        <div class="blog-header">
+                            <span class="blog-author">zynox</span>
+                            <span class="blog-category">motivation</span>
+                        </div>
+                        <h2>building in silence</h2>
+                        <p class="blog-excerpt">the power of quiet creation and how it leads to more meaningful work. why the best things are often built away from the noise.</p>
+                        <blockquote class="blog-quote">"the loudest impact comes from the quietest work."</blockquote>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 zynox. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
