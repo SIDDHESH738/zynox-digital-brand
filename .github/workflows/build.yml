@@ -13,21 +13,21 @@ jobs:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Add your SonarCloud token in GitHub Secrets
 
     steps:
-      # Checkout your repository
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Setup Node.js (required for SonarScanner JS)
+      # Step 2: Setup Node.js (required for SonarScanner JS)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # Install dependencies if any (optional for pure HTML/JS)
+      # Step 3: Install dependencies if any (optional)
       - name: Install dependencies
         run: npm install || echo "No dependencies to install"
 
-      # Run SonarCloud Scanner
+      # Step 4: Run SonarCloud Scanner
       - name: Run SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5
         with:
@@ -36,3 +36,5 @@ jobs:
             -Dsonar.organization=your-organization-key
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.sources=.
+            -Dsonar.inclusions=**/*.js,**/*.css,**/*.html
+            -Dsonar.exclusions=**/node_modules/**,**/assets/**,**/*.png,**/*.jpg,**/*.jpeg,**/*.gif,**/*.svg,**/*.woff,**/*.woff2,**/*.ttf
